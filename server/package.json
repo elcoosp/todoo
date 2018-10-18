@@ -1,0 +1,23 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon --experimental-modules  ./src/index.mjs"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"koa": "^2.5.3",
+		"koa-better-body": "^3.0.4",
+		"koa-logger": "^3.2.0",
+		"koa-router": "^7.4.0"
+	},
+	"devDependencies": {
+		"@types/koa-router": "^7.0.32",
+		"@types/mongoose": "^5.2.19",
+		"nodemon": "^1.18.4"
+	}
+}
