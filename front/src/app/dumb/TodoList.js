@@ -1,19 +1,32 @@
 import React from 'react'
 import P from 'prop-types'
-import { Columns, Column, Card, CardHeader, CardHeaderTitle } from 'bloomer'
-export default function TodoList({ todos }) {
+import {
+	Column,
+	Card,
+	CardHeader,
+	CardHeaderTitle,
+	Checkbox,
+	CardContent,
+	Tag
+} from 'bloomer'
+export default function TodoList({ todos, body }) {
 	return (
-		<Columns isCentered>
-			{todos.map(({ title, id }) => (
+		<Column isCentered>
+			{todos.map(({ title, id, deadline, body }) => (
 				<Column key={id} isSize="1/2">
 					<Card>
 						<CardHeader>
+							<Checkbox />
 							<CardHeaderTitle>{title}</CardHeaderTitle>
+							<Tag isColor="info" isSize="medium">
+								{deadline}
+							</Tag>
 						</CardHeader>
+						{body && <CardContent>{body}</CardContent>}
 					</Card>
 				</Column>
 			))}
-		</Columns>
+		</Column>
 	)
 }
 TodoList.propTypes = {
