@@ -9,7 +9,7 @@ import {
 	CardContent,
 	Tag
 } from 'bloomer'
-export default function TodoList({ todos, body }) {
+export default function TodoList({ todos }) {
 	return (
 		<Column isCentered>
 			{todos.map(({ title, id, deadline, body }) => (
