@@ -15,7 +15,7 @@
 		"redux-saga": "^0.16.2",
 		"reselect": "^4.0.0",
 		"seamless-immutable": "^7.1.4",
-		"superagent": "^4.0.0-beta.5"
+		"superagent": "^4.0.0"
 	},
 	"scripts": {
 		"start": "react-scripts start",
